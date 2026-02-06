@@ -69,24 +69,32 @@ class NearbyHouses extends StatelessWidget {
                             fontWeight: FontWeight.w500,
                           ),
                         ),
+
                         const SizedBox(height: 5),
+
                         Text(
                           house['address']!,
                           style: TextStyle(color: color.secondary),
                         ),
+
                         const SizedBox(height: 8),
+
                         Row(
                           children: [
                             IconText(
                               icon: Icons.bed_outlined,
                               text: house['bedrooms']!,
                             ),
+
                             const SizedBox(width: 10),
+
                             IconText(
                               icon: Icons.bathtub_outlined,
                               text: house['bathrooms']!,
                             ),
+
                             const SizedBox(width: 10),
+
                             IconText(
                               icon: Icons.straighten,
                               text: house['squareFeet']!,
