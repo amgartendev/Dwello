@@ -45,7 +45,6 @@ linter:
     # ------------------
     avoid_redundant_argument_values: true
     prefer_final_fields: true
-    invariant_booleans: true
     use_full_hex_values_for_flutter_colors: true
 
     # ------------------
