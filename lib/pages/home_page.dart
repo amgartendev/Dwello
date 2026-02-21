@@ -12,14 +12,20 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: SingleChildScrollView(
+    return Scaffold(
+      appBar: PreferredSize(
+        preferredSize: const Size.fromHeight(0),
+        child: AppBar(
+          scrolledUnderElevation: 0,
+          backgroundColor: Theme.of(context).colorScheme.surface,
+        ),
+      ),
+      body: const SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Dwell overview
             DwellOverview(),
-
             SizedBox(height: 15),
 
             // Main container
